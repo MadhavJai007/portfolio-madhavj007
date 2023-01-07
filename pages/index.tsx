@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -60,6 +61,21 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
+
+          <a
+            href={"/posts/first-post"}
+            className={styles.card}
+            target="_blank" // opens it in a new tab
+            rel='noopener noreferrer'
+          >
+            <h2 className={inter.className}>
+              Posts here :D <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Find in-depth information about ME.
+            </p>
+          </a>
+          
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
