@@ -1,5 +1,11 @@
 const firstPost = () => {
-    return <h1>First post :)</h1>
+    return (
+        <div>
+            <h1>First post :)</h1>
+            <h2>Second post</h2>
+        </div>
+        
+    )
 }
 
 export default firstPost;
