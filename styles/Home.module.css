@@ -1,10 +1,29 @@
-.main {
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: 'Play', sans-serif;
+} */
+
+.main {
+  margin-top: 7rem;
+}
+
+.container {
+  max-width: 100rem;
+  /* padding: 0 3rem; */
+  /* margin: 0rem auto 6rem; */
+  font-family: 'Play', sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .description {

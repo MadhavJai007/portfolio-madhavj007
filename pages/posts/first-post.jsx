@@ -7,17 +7,12 @@ import Layout from '../../components/layout'
 const firstPost = () => {
     return (
         <>
-            <Head>
+            <Layout>
+                <Head>
                     <title>First post</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-                {/* <Script
-                    src="https://connect.facebook.net/en_US/sdk.js"
-                    strategy="lazyOnload"
-                    onLoad={() =>
-                    console.log(`script loaded correctly, window.FB has been populated`)
-                    }
-                /> */}
+
             <div>
                 <h1>First post :)</h1>
                 <h2>Second post</h2>
@@ -25,6 +20,7 @@ const firstPost = () => {
                     <Link href="/">Back to home</Link>
                 </h2>
             </div>
+            </Layout>
         </>
     )
 }

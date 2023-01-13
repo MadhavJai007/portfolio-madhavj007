@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -73,40 +75,51 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Play', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  /* font-family:'Play', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; */
   /* font-family: var(--font-mono); */
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
-  color: inherit;
+  color: #0070f3;
   text-decoration: none;
 }
 
 a:hover {
   color: #7ddd00;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* dark mode preference */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -3,21 +3,23 @@ import { ReactElement } from "react";
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import NavBar from './Navbar';
 import styles from '../styles/layout.module.css'
-import utilStyles from '../styles/utils.modules.css';
+import utilStyles from '../styles/utils.module.css';
 
 const name = '<Maddy>';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Portfolio: Madhav Jaisankar';
 
 export default function Layout({ children, home }) {
     return (
       <>
         <div className={styles.container}>
+          {/* TODO: research these meta tags */}
           <Head>
             <link rel="icon" href="/favicon.ico" />
             <meta
               name="description"
-              content="Learn how to build a personal website using Next.js"
+              content="My portfolio "
             />
             <meta
               property="og:image"
@@ -28,12 +30,16 @@ export default function Layout({ children, home }) {
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
           </Head>
+
+          
           <header className={styles.header}>
-            {home? (
+            {/* TODO: Navbar component here. i think */}
+            <NavBar />
+            {/* {home? (
               <>
                 <Image
                   priority
-                  src="/images/pfp.jpg"
+                  src="/images/pfp.png"
                   className={utilStyles.borderCircle}
                   height={144}
                   width={144}
@@ -46,7 +52,7 @@ export default function Layout({ children, home }) {
                 <Link href="/">
                   <Image
                     priority
-                    src="/images/pfp.jpg"
+                    src="/images/pfp.png"
                     className={utilStyles.borderCircle}
                     height={108}
                     width={108}
@@ -60,18 +66,18 @@ export default function Layout({ children, home }) {
                 </h2>
               </>
             )
-            }
+            } */}
           </header>
 
-          <main>
+          <main className={styles.main}>
             {children}
           </main>
 
-          {!home && (
+          {/* {!home && (
             <div className={styles.backToHome}>
               <Link href="/">← Back to home</Link>
             </div>
-          )}
+          )} */}
         </div>
       </>
     );

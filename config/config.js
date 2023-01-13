@@ -1,0 +1,116 @@
+export const intro = {
+    title: "Hello, I'm Madhav",
+    desc: "Full Stack React.js and Mobile Application developer",
+    buttons: [
+        {
+          title: "Connect",
+          link: "#contact",
+          isPrimary: true,
+        },
+        {
+          title: "Resume",
+          link: "#",
+          isPrimary: false,
+        },
+      ]
+}
+
+export const about = {
+    title: "A little about me..",
+	desc: [
+		"Full stack developer in react projects and mobile app developer for both android and ios",
+		"I am specialized in developing Full Stack Websites"
+	],
+}
+
+export const skills = {
+    title: 'Things I do',
+    cards: [
+        {
+            title: "Full stack development",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            icons: [
+                {
+                    name: "logos:react",
+                    isLink: false,
+                    link: ""
+                }
+            ]
+        },
+        {
+            title: "Mobile app development",
+            desc: "dsadqweqw",
+            icons: [
+                {
+                    name: "material-symbols:android",
+                    isLink: false,
+                    link: ""
+                },
+                {
+                    name: "vscode-icons:file-type-swift",
+                    isLink: false,
+                    link: ""
+                },
+            ]
+        },
+        {
+            title: "Full stack development",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            icons: [
+                {
+                    name: "logos:react",
+                    isLink: false,
+                    link: ""
+                }
+            ]
+        },
+    ]
+}
+
+export const projects = {
+    title: 'Projects',
+    cards: [
+        {
+            title: "Rpoject",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            icons: [
+                {
+                    name: "mdi:github",
+                    isLink: true,
+                    link: "https://github.com/MadhavJai007/Swiftly"
+                }
+            ]
+        },
+        {
+            title: "Swiftly",
+            desc: "dsadqweqw",
+            icons: [
+                {
+                    name: "mdi:github",
+                    isLink: true,
+                    link: "https://github.com/MadhavJai007/Swiftly-Expert"
+                },
+                {
+                    name: "mdi:github",
+                    isLink: true,
+                    link: "https://github.com/MadhavJai007/Swiftly"
+                },
+            ]
+        },
+    ]
+}
+
+export const contactLinks = [
+    {
+        iconName: "mdi:github",
+        link: "https://github.com/MadhavJai007"
+    },
+    {
+        iconName: "mdi:linkedin",
+        link: "https://www.linkedin.com/in/madhav-jaisankar/"
+    },
+    {
+        iconName: "ic:sharp-email",
+        link: "mailto:madhav.jaisankar@gmail.com"
+    }
+]
