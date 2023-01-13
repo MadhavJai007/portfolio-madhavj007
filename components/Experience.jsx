@@ -11,7 +11,7 @@ export const Experience = ({title, career}) => {
                 {career.map((value, idx) => {
                     return(
                         <VerticalTimelineElement
-                        key={idx}
+                            key={idx}
                             className="vertical-timeline-element--work"
                             contentStyle={{ background: (value.isCurrent ? "#fd4d62" : "#FFF"), color: (value.isCurrent ? "#FFF" : "#000") }}
                             contentArrowStyle={{ borderRight: (value.isCurrent ? '7px solid  #fd4d62' : '7px solid  #FFF') }}

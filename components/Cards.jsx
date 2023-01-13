@@ -23,6 +23,7 @@ export const Cards = ({title, desc, icons}) => {
                                         href={ value.link}
                                         className={"mx-1"}
                                         target="_blank"
+                                        rel="noreferrer"
                                     >
                                         <Icon 
                                             icon={value.name}
@@ -35,6 +36,7 @@ export const Cards = ({title, desc, icons}) => {
                             else {
                                 return (
                                     <Icon 
+                                        key={idx}
                                         icon={value.name}
                                         width="2em"
                                         height={"3em"}                                        

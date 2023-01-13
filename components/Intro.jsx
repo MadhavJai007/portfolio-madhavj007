@@ -15,11 +15,11 @@ export const Intro = ({ title, desc, buttons }) => {
 						<div className="text-center">
 							{buttons.map((value, index) => (
 								(value.isPrimary) ?
-									<Link key={index} href={value.link} aria-label={value.link}>
+									<Link target="_blank" rel="noreferrer" key={index} href={value.link} aria-label={value.link}>
 										<btn className="btn btn-primary my-1 mx-3">{value.title}</btn>
 									</Link>
 									:
-									<Link target="_blank" rel="noreferrer" t key={index} href={value.link} aria-label={value.link}>
+									<Link target="_blank" rel="noreferrer" key={index} href={value.link} aria-label={value.link}>
 										<btn className="btn btn-outline-primary my-1 mx-3">{value.title}</btn>
 									</Link>
 							))}
