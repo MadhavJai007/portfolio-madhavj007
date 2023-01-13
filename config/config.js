@@ -16,7 +16,7 @@ export const intro = {
 }
 
 export const about = {
-    title: "A little about me..",
+    title: "A little about me...",
 	desc: [
 		"Full stack developer in react projects and mobile app developer for both android and ios",
 		"I am specialized in developing Full Stack Websites"
@@ -51,17 +51,6 @@ export const skills = {
                     isLink: false,
                     link: ""
                 },
-            ]
-        },
-        {
-            title: "Full stack development",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            icons: [
-                {
-                    name: "logos:react",
-                    isLink: false,
-                    link: ""
-                }
             ]
         },
     ]
