@@ -50,7 +50,7 @@ const NavBar = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <div className={navbarStyles.navLink}>
-                                <Link className={navbarStyles.navLink2} href={"/"}>
+                                <Link className={navbarStyles.navLink2} href={"#experience"}>
                                     Experience
                                 </Link>
                             </div>

@@ -4,10 +4,11 @@ import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import NavBar from '../components/Navbar';
 import Date from '../components/date';
-import { about, intro, skills, projects, contactLinks } from '../config/config';
+import { about, intro, skills, projects, contactLinks, experience } from '../config/config';
 import { Intro } from '../components/Intro';
 import { About } from '../components/About';
 import { Skills } from '../components/Skills';
+import { Experience } from '../components/Experience';
 import { Footer } from '../components/Footer';
 import {getSortedPostsData} from '../utils/posts'
 
@@ -76,9 +77,10 @@ export default function Home({allPostsData}) {
         />
 
         {/* TODO: Experience component */}
-        
-
-        {/* : Skills component */}
+        <Experience 
+          title={experience.title}
+          career={experience.career}
+        />
 
         {/* : Projects component */}
         <Projects 

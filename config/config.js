@@ -114,3 +114,33 @@ export const contactLinks = [
         link: "mailto:madhav.jaisankar@gmail.com"
     }
 ]
+
+export const experience = {
+    title: "Experience",
+    career: [
+        {
+            position: "Application Developer",
+            place: "CloudDX",
+            skills: "React Native/Android development, SciChart",
+            time: "Jan 2022 - April 2022",
+            location: 'Oakville, ON / Remote',
+            isCurrent: false,
+        },
+        {
+            position: "Mobile application developer",
+            place: "Nevvon",
+            skills: "React.js development, AWS, Python, Twilio",
+            time: "May 2021 - Dec 2021",
+            location: 'Oakville, ON / Remote',
+            isCurrent: false,
+        },
+        {
+            position: "Research assistant",
+            place: "Nevvon",
+            skills: "Python, Twilio, AWS",
+            time: "Jan 2022 - April 2022",
+            location: 'Oakville, ON / Remote',
+            isCurrent: false,
+        },
+    ]
+}

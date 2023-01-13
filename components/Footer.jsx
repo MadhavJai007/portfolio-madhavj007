@@ -23,9 +23,6 @@ export const Footer = ({contactLinks}) => {
                             </Link>
                         )
                     })}
-                    {/* <p className="m-2">dsa</p>
-                    <p className="m-2">dsa</p>
-                    <p className="m-2">dsa</p> */}
                 </div>
                 <div className="container text-muted">
                     <small>&copy; Copyright {new Date().getFullYear()} </small>
