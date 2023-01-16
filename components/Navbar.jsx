@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return(
 
-        <Navbar expand="md" expanded={expand}  style={ {width: '100%'} }>
+        <Navbar expand="md" expanded={expand}  style={ {width: '100%'} } className={"bg-altlight"}>
             <Container  >
                 <Navbar.Brand className={""}>
                     <Link className={ "navLink2"} href={"/"}>
@@ -30,11 +30,12 @@ const NavBar = () => {
                     <Nav
                         className={"ms-auto my-2 my-lg-0"}
                         // style={{ maxHeight: '100px'}}
+                        
                         navbarScroll
                     >
                         <Nav.Item>
                             <div className={ "navLink"}>
-                                <Link className={ "navLink2"} href={"#projects"}>
+                                <Link className={ "navLink2 "} href={"#projects"}>
                                     Projects
                                 </Link>
                             </div>

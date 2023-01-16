@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 export const Experience = ({title, career}) => {
     return(
-        <div id="experience" className="bg-primary py-5 px-2">
+        <div id="experience" className="bg-deepblue py-5 px-2">
             <div className="container mt-2 pt-4 px-5">
             <h1 className="text-light fw-bold display-3 mb-4">{title}</h1>
             <VerticalTimeline layout='2-columns' animate={false}>

@@ -4,8 +4,8 @@
 // Include any default variable overrides here (though functions won't be available)
 // $body-bg: #000;
 // $body-color: #111;
-$primary: #219f70 ;
-$secondary: #F7F7F7;
+$primary: #226dff ;
+// $secondary: #F7F7F7;
 $light: #FFFFFF;
 $warning: #9f2150;
 
@@ -15,8 +15,10 @@ $warning: #9f2150;
 
 // custome theme color maps
 $custom-theme-colors: (
-    "altlight": #bbc4ff,
-    "altdark": #1c1e26,
+    "altlight": #F7F7F7,
+    "altdark": #181a27,
+    "slate": #181b2b,
+    "deepblue": #226dff,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
@@ -61,6 +63,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem;
+    color: #226dff
   }
 
 
@@ -70,6 +73,7 @@ html, body {
     padding: 0.3rem 2rem !important;
     font-size: 1.4rem !important;
     font-weight: bold;
+    // background-color: #181a27 !important;
   }
 
   @media (max-width: 767px) {
@@ -92,7 +96,7 @@ html, body {
 //  for the hamburger menu icon when viewport size is lower than lg
   .navbarToggler span {
     display: block !important;
-    background-color: #295abd !important;
+    background-color: #226dff !important;
     height: 4px !important;
     width: 27px !important;
     margin-top: 5px !important;

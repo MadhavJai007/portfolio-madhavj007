@@ -6,21 +6,21 @@ const { publicRuntimeConfig } = getConfig()
 
 export const Intro = ({ title, desc, buttons }) => {
 	return (
-		<div id="intro" className="bg-secondary py-5 px-2">
+		<div id="intro" className="bg-altlight py-5 px-2">
 			<div className="container mt-2 pt-4">
 				<div className=" row align-items-center">
 					<div className="col-sm-12 text-center">
-						<h1 className="text-primary fw-bold display-2">{title}</h1>
-						<p>{desc}</p>
+						<h1 className="text-deepblue fw-bold display-2">{title}</h1>
+						<p className='text-dark'>{desc}</p>
 						<div className="text-center">
 							{buttons.map((value, index) => (
 								(value.isPrimary) ?
 									<Link key={index} href={value.link} aria-label={value.link}>
-										<btn className="btn btn-primary my-1 mx-3">{value.title}</btn>
+										<btn className="btn btn-deepblue my-1 mx-3">{value.title}</btn>
 									</Link>
 									:
 									<Link target="_blank" rel="noreferrer" key={index} href={value.link} aria-label={value.link}>
-										<btn className="btn btn-outline-primary my-1 mx-3">{value.title}</btn>
+										<btn className="btn btn-outline-deepblue my-1 mx-3">{value.title}</btn>
 									</Link>
 							))}
 						</div>
