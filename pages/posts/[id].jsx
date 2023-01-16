@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../utils/posts';
 
-import utilStyles from '../../styles/utils.module.css';
+// import utilStyles from '../../styles/utils.module.css';
 
 // gets the values of id for dynamic routing
 export async function getStaticPaths() {
@@ -33,8 +33,8 @@ export default function Post({postData}) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <h1 className={"utilStyles.headingXl"}>{postData.title}</h1>
+        <div className={"utilStyles.lightText"}>
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
