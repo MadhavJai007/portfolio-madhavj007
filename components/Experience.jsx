@@ -7,7 +7,7 @@ export const Experience = ({title, career}) => {
         <div id="experience" className="bg-primary py-5 px-2">
             <div className="container mt-2 pt-4 px-5">
             <h1 className="text-light fw-bold display-3 mb-4">{title}</h1>
-            <VerticalTimeline layout='2-columns'>
+            <VerticalTimeline layout='2-columns' animate={false}>
                 {career.map((value, idx) => {
                     return(
                         <VerticalTimelineElement
@@ -16,8 +16,8 @@ export const Experience = ({title, career}) => {
                             contentStyle={{ background: (value.isCurrent ? "#fd4d62" : "#FFF"), color: (value.isCurrent ? "#FFF" : "#000") }}
                             contentArrowStyle={{ borderRight: (value.isCurrent ? '7px solid  #fd4d62' : '7px solid  #FFF') }}
                             date={value.time}
-                            dateClassName={"experienceDate"}
-                            iconStyle={{ background: '#fd4d62', color: '#fff' }}
+                            dateClassName={""}
+                            iconStyle={{ background: '#9f2150', color: '#fff' }}
                             icon={<Icon 
                                 icon={"mdi:briefcase"}
                                 width="2em"

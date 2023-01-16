@@ -1,25 +1,23 @@
 import { useState, useEffect } from "react";
 import {Container, Navbar, Nav, Button} from "react-bootstrap"
 import Link from 'next/link'
-
-import navbarStyles from  '../styles/navbar.module.css'
+import { resumeLink } from "../config/config";
+// import  from  '../styles/navbar.module.css'
 
 const NavBar = () => {
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
-
-
 
     return(
 
         <Navbar expand="md" expanded={expand}  style={ {width: '100%'} }>
             <Container  >
                 <Navbar.Brand className={""}>
-                    <Link className={navbarStyles.navLink2} href={"/"}>
+                    <Link className={ "navLink2"} href={"/"}>
                          MJ
                      </Link> 
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" className={navbarStyles.navbarToggler}
+                <Navbar.Toggle aria-controls="navbarScroll" className={ "navbarToggler"}
                      onClick={() => {
                         updateExpanded(expand ? false : "expanded");
                       }}
@@ -35,22 +33,22 @@ const NavBar = () => {
                         navbarScroll
                     >
                         <Nav.Item>
-                            <div className={navbarStyles.navLink}>
-                                <Link className={navbarStyles.navLink2} href={"#projects"}>
+                            <div className={ "navLink"}>
+                                <Link className={ "navLink2"} href={"#projects"}>
                                     Projects
                                 </Link>
                             </div>
                         </Nav.Item>
                         <Nav.Item>
-                            <div className={navbarStyles.navLink}>
-                                <Link className={navbarStyles.navLink2} href={"/"}>
+                            <div className={ "navLink"}>
+                                <Link className={ "navLink2"} target="_blank" rel="noreferrer" href={resumeLink}>
                                     Resume
                                 </Link>
                             </div>
                         </Nav.Item>
                         <Nav.Item>
-                            <div className={navbarStyles.navLink}>
-                                <Link className={navbarStyles.navLink2} href={"#experience"}>
+                            <div className={ "navLink"}>
+                                <Link className={ "navLink2"} href={"#experience"}>
                                     Experience
                                 </Link>
                             </div>
@@ -64,10 +62,10 @@ const NavBar = () => {
         //     expanded={expand}
         //     fixed={"top"}
         //     expand="md"
-        //     className={navColour ? navbarStyles.sticky : navbarStyles.navbar}
+        //     className={navColour ?  sticky :  navbar}
         // >
         //     <Container>
-        //         <Navbar.Brand className={`d-flex ${navbarStyles.navbarBrand}` }>
+        //         <Navbar.Brand className={`d-flex ${ navbarBrand}` }>
         //             <Link href={"/"}>
         //                 MJ
         //             </Link>
@@ -77,7 +75,7 @@ const NavBar = () => {
         //             onClick={() => {
         //                 updateExpanded(expand ? false : "expanded");
         //             }}
-        //             className={navbarStyles.navbarToggler}
+        //             className={ navbarToggler}
         //         >
         //             <span/>
         //             <span/>

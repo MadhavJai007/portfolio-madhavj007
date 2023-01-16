@@ -1,10 +1,10 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import NavBar from '../components/Navbar';
 import Date from '../components/date';
-import { about, intro, skills, projects, contactLinks, experience } from '../config/config';
+import { pageHead, about, intro, skills, projects, contactLinks, experience } from '../config/config';
+import { PageHead } from '../components/PageHead';
 import { Intro } from '../components/Intro';
 import { About } from '../components/About';
 import { Skills } from '../components/Skills';
@@ -14,8 +14,8 @@ import {getSortedPostsData} from '../utils/posts'
 
 // Styles and font imports
 import { Inter } from '@next/font/google'
-import utilStyles from '../styles/utils.module.css';
-import styles from '../styles/Home.module.css'
+// import utilStyles from '../styles/utils.module.css';
+// import styles from '../styles/Home.module.css'
 import { Projects } from '../components/Projects';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,26 +33,12 @@ export default function Home({allPostsData}) {
   return (
     <>
       {/* <Layout home> */}
-        <div className={styles.container}>
-        {/* TODO: export as header component */}
+      <div className={""}>
         {/* Next js component that acts as <head> tag of the page */}
-        <Head>
-          <title>{siteTitle}</title>
-          <meta
-              name="description"
-              content="My portfolio "
-            />
-            <meta
-              property="og:image"
-              content={`https://og-image.vercel.app/${encodeURI(
-                siteTitle,
-              )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-            />
-            <meta name="og:title" content={siteTitle} />
-            <meta name="twitter:card" content="summary_large_image" />
-        </Head>
+        <PageHead siteTitle={pageHead.siteTitle} metatags={pageHead.metatags}/>
 
-        <div className={styles.header}>
+        {/* Navbar */}
+        <div className={""}>
           <NavBar />
         </div>
         
@@ -76,7 +62,7 @@ export default function Home({allPostsData}) {
           cards={skills.cards}
         />
 
-        {/* TODO: Experience component */}
+        {/* Experience component */}
         <Experience 
           title={experience.title}
           career={experience.career}

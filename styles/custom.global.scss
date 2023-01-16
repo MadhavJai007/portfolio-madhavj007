@@ -2,16 +2,105 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+// $body-bg: #000;
+// $body-color: #111;
+$primary: #219f70 ;
+$secondary: #F7F7F7;
+$light: #FFFFFF;
+$warning: #9f2150;
 
+// import bootstrap functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// custome theme color maps
+$custom-theme-colors: (
+    "altlight": #bbc4ff,
+    "altdark": #1c1e26,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import rest of bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
 // $font-family-sans-serif: -apple-system, 'Play', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-.experienceDate {
+html, body {
+    font-family: 'Play', sans-serif;
+}
+
+// .index-container {
+//   max-width: 100%;
+//   padding: 0 3rem; 
+// //    margin: 0rem auto 6rem; 
+// }
+
+// .index-header {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.experience-date {
     color: "#FFF";
 }
 
+.navLink {
+    display: block;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+
+  .navLink2 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+
+  .navbar {
+    // position: fixed !important;
+    transition: all 0.3s ease-out 0s !important;
+    padding: 0.3rem 2rem !important;
+    font-size: 1.4rem !important;
+    font-weight: bold;
+  }
+
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 1rem 2rem !important;
+      font-size: 1.4rem !important;
+    //   background-color: #181a27 !important;
+    }
+    .navbar-nav .nav-item a::after {
+      display: none !important;
+    }
+  }
+  
+  .navbarToggler {
+    position: relative !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+  
+//  for the hamburger menu icon when viewport size is lower than lg
+  .navbarToggler span {
+    display: block !important;
+    background-color: #295abd !important;
+    height: 4px !important;
+    width: 27px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    transform: rotate(0deg) !important;
+    left: 0 !important;
+    opacity: 1 !important;
+  }
 // :root {
 //   --max-width: 1100px;
 //   --border-radius: 12px;
