@@ -69,7 +69,7 @@ export default function Layout({ children, home }) {
             } */}
           </header>
 
-          <main className={styles.main}>
+          <main className={"styles.main"}>
             {children}
           </main>
 

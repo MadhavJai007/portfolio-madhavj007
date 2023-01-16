@@ -10,7 +10,7 @@ import { About } from '../components/About';
 import { Skills } from '../components/Skills';
 import { Experience } from '../components/Experience';
 import { Footer } from '../components/Footer';
-// import {getSortedPostsData} from '../utils/posts'
+import {getSortedPostsData} from '../utils/posts'
 
 // Styles and font imports
 import { Inter } from '@next/font/google'
@@ -20,17 +20,16 @@ import { Projects } from '../components/Projects';
 
 const inter = Inter({ subsets: ['latin'] })
 
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData();
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   };
-// }
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
 
-// export default function Home({allPostsData}) {
-export default function Home() {
+export default function Home({allPostsData}) {
   return (
     <>
       {/* <Layout home> */}
