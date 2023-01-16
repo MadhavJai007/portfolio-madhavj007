@@ -4,8 +4,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import NavBar from './Navbar';
-import styles from '../styles/layout.module.css'
-import utilStyles from '../styles/utils.module.css';
+// import styles from '../styles/layout.module.css'
+// import utilStyles from '../styles/utils.module.css';
 
 const name = '<Maddy>';
 export const siteTitle = 'Portfolio: Madhav Jaisankar';
@@ -13,7 +13,7 @@ export const siteTitle = 'Portfolio: Madhav Jaisankar';
 export default function Layout({ children, home }) {
     return (
       <>
-        <div className={styles.container}>
+        <div className={"styles.container"}>
           {/* TODO: research these meta tags */}
           <Head>
             <link rel="icon" href="/favicon.ico" />
@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
           </Head>
 
           
-          <header className={styles.header}>
+          <header className={"styles.header"}>
             {/* TODO: Navbar component here. i think */}
             <NavBar />
             {/* {home? (
