@@ -29,8 +29,8 @@ export const intro = {
 export const about = {
     title: "A little about me...",
 	desc: [
-		"I'm a software developer with experience developing Full Stack web applications with React.js and cloud services including Google cloud and AWS. I've also had experience in mobile app development with projects involving Android and iOS in an agile development environment.",
-        "As a recent graduate, my goal is to use my newfound knowledge, experience and curiosity to learn new tech so I can implement them in my future personal projects.",
+		"I'm a software developer with experience developing Full Stack web applications with React.js. I've also had experience in mobile app development projects involving Android and iOS in an agile development environment.",
+        // "As a recent graduate, my goal is to use my newfound knowledge, experience and curiosity to learn new tech so I can implement them in my future personal projects.",
 	],
 }
 
