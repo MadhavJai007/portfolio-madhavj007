@@ -10,7 +10,7 @@ export const Cards = ({title, desc, icons}) => {
             >
             <Card.Body>
                 <Card.Title className="text-primary fw-bold">{title}</Card.Title>
-                <Card.Text>
+                <Card.Text className="h6 ">
                     {desc}
                 </Card.Text>
                 <div className="text-end" >

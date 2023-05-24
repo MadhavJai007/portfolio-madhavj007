@@ -11,7 +11,7 @@ export const pageHead = {
 
 export const intro = {
     title: "Hello, I'm Madhav",
-    desc: "Full Stack React.js and Mobile Application developer",
+    desc: "Software Developer",
     buttons: [
         {
           title: "Connect",
@@ -29,7 +29,8 @@ export const intro = {
 export const about = {
     title: "A little about me...",
 	desc: [
-		"I'm a software developer with experience developing Full Stack web applications with React.js. I've also had experience in mobile app development projects involving Android and iOS in an agile development environment.",
+		"I'm a software developer with 1+ years of Agile development experience buiilding Full Stack Web and Mobile solutions. ", 
+        "My tech stack includes but not limited to React.js, Node.js, AWS suite, Google cloud services, Swift and Kotlin.",
         // "As a recent graduate, my goal is to use my newfound knowledge, experience and curiosity to learn new tech so I can implement them in my future personal projects.",
 	],
 }

@@ -7,7 +7,7 @@ export const About = ({ title, desc }) => {
 				<h1 className="text-deepblue fw-bold">{title}</h1>
 				<div className="px-sm-5 text-altdark">
 					{desc.map((value, index) => (
-						<p key={index} >{value}</p>
+						<p className="h5 " key={index} >{value}</p>
 					))}
 				</div>
 			</div>

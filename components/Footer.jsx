@@ -25,7 +25,7 @@ export const Footer = ({contactLinks}) => {
                     })}
                 </div>
                 <div className="container text-muted">
-                    <small>&copy; Copyright {new Date().getFullYear()} </small>
+                    <small ><span className="copyleft">&copy;</span> Copyleft {new Date().getFullYear()} </small>
                 </div>
         </div>
     )

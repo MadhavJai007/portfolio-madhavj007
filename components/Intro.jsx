@@ -10,8 +10,8 @@ export const Intro = ({ title, desc, buttons }) => {
 			<div className="container mt-2 pt-4">
 				<div className=" row align-items-center">
 					<div className="col-sm-12 text-center">
-						<h1 className="text-deepblue fw-bold display-2">{title}</h1>
-						<p className='text-dark'>{desc}</p>
+						<h1 className="text-deepblue fw-bold h4">{title}</h1>
+						<p className='text-dark display-3'>{desc}</p>
 						<div className="text-center">
 							{buttons.map((value, index) => (
 								(value.isPrimary) ?
