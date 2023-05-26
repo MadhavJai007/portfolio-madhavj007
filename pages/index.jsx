@@ -6,7 +6,7 @@ import Date from '../components/date';
 import { pageHead, about, intro, skills, projects, contactLinks, experience } from '../config/config';
 import { PageHead } from '../components/PageHead';
 import { Intro } from '../components/Intro';
-import About from '../components/About';
+import {About} from '../components/About';
 import { Skills } from '../components/Skills';
 import { Experience } from '../components/Experience';
 import { Footer } from '../components/Footer';
