@@ -6,7 +6,7 @@ import Date from '../components/date';
 import { pageHead, about, intro, skills, projects, contactLinks, experience } from '../config/config';
 import { PageHead } from '../components/PageHead';
 import { Intro } from '../components/Intro';
-import { About } from '../components/About';
+import About from '../components/About';
 import { Skills } from '../components/Skills';
 import { Experience } from '../components/Experience';
 import { Footer } from '../components/Footer';
@@ -17,6 +17,7 @@ import { Inter } from '@next/font/google'
 // import utilStyles from '../styles/utils.module.css';
 // import styles from '../styles/Home.module.css'
 import { Projects } from '../components/Projects';
+import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,17 +31,23 @@ export async function getStaticProps() {
 }
 
 export default function Home({allPostsData}) {
+
+  useEffect(() => {
+    window.location.href = 'https://mjfolio.vercel.app/'
+  }, [])
+
   return (
     <>
       {/* <Layout home> */}
       <div className={""}>
+
         {/* Next js component that acts as <head> tag of the page */}
         <PageHead siteTitle={pageHead.siteTitle} metatags={pageHead.metatags}/>
-
+        <NavBar />
         {/* Navbar */}
-        <div className={""}>
-          <NavBar />
-        </div>
+        {/* <div className={""}>
+          
+        </div> */}
         
         {/*  Intro component */}
         <Intro 
